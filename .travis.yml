@@ -1,17 +1,11 @@
 sudo: false
 language: go
 go:
-  - 1.12.x
-  - 1.13.x
   - 1.14.x
 
 matrix:
   fast_finish: true
   include:
-  - go: 1.12.x
-    env: GO111MODULE=on
-  - go: 1.13.x
-    env: GO111MODULE=on
   - go: 1.14.x
     env: GO111MODULE=on
 
