@@ -26,7 +26,7 @@ import (
 	// "github.com/daryl/zeus"
 	cloudykitrouter "github.com/cloudykit/router"
 	"github.com/dimfeld/httptreemux"
-	"github.com/emicklei/go-restful"
+	"github.com/emicklei/go-restful/v3"
 	"github.com/gin-gonic/gin"
 	"github.com/go-chi/chi"
 	"github.com/go-martini/martini"
