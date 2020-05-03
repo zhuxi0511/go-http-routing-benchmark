@@ -1,4 +1,29 @@
 sudo: false
 language: go
 go:
+  - 1.12.x
   - 1.13.x
+  - 1.14.x
+
+matrix:
+  fast_finish: true
+  include:
+  - go: 1.12.x
+    env: GO111MODULE=on
+  - go: 1.13.x
+    env: GO111MODULE=on
+  - go: 1.14.x
+    env: GO111MODULE=on
+
+git:
+  depth: 10
+
+before_install:
+  - if [[ "${GO111MODULE}" = "on" ]]; then mkdir "${HOME}/go"; export GOPATH="${HOME}/go"; fi
+
+install:
+  - if [[ "${GO111MODULE}" = "on" ]]; then go mod download; fi
+  - if [[ "${GO111MODULE}" = "on" ]]; then export PATH="${GOPATH}/bin:${GOROOT}/bin:${PATH}"; fi
+
+script:
+  - go test -bench=Gin
