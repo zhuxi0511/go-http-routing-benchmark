@@ -202,10 +202,11 @@ func BenchmarkChi_GPlusStatic(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/people", nil)
 	benchRequest(b, gplusChi, req)
 }
-func BenchmarkCloudyKitRouter_GPlusStatic(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/people", nil)
-	benchRequest(b, gplusCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_GPlusStatic(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/people", nil)
+// 	benchRequest(b, gplusCloudyKitRouter, req)
+// }
 func BenchmarkDenco_GPlusStatic(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/people", nil)
 	benchRequest(b, gplusDenco, req)
@@ -338,10 +339,11 @@ func BenchmarkChi_GPlusParam(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/people/118051310819094153327", nil)
 	benchRequest(b, gplusChi, req)
 }
-func BenchmarkCloudyKitRouter_GPlusParam(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/people/118051310819094153327", nil)
-	benchRequest(b, gplusCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_GPlusParam(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/people/118051310819094153327", nil)
+// 	benchRequest(b, gplusCloudyKitRouter, req)
+// }
 func BenchmarkDenco_GPlusParam(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/people/118051310819094153327", nil)
 	benchRequest(b, gplusDenco, req)
@@ -474,10 +476,11 @@ func BenchmarkChi_GPlus2Params(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/people/118051310819094153327/activities/123456789", nil)
 	benchRequest(b, gplusChi, req)
 }
-func BenchmarkCloudyKitRouter_GPlus2Params(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/people/118051310819094153327/activities/123456789", nil)
-	benchRequest(b, gplusCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_GPlus2Params(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/people/118051310819094153327/activities/123456789", nil)
+// 	benchRequest(b, gplusCloudyKitRouter, req)
+// }
 func BenchmarkDenco_GPlus2Params(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/people/118051310819094153327/activities/123456789", nil)
 	benchRequest(b, gplusDenco, req)
@@ -604,9 +607,10 @@ func BenchmarkBone_GPlusAll(b *testing.B) {
 func BenchmarkChi_GPlusAll(b *testing.B) {
 	benchRoutes(b, gplusChi, gplusAPI)
 }
-func BenchmarkCloudyKitRouter_GPlusAll(b *testing.B) {
-	benchRoutes(b, gplusCloudyKitRouter, gplusAPI)
-}
+
+// func BenchmarkCloudyKitRouter_GPlusAll(b *testing.B) {
+// 	benchRoutes(b, gplusCloudyKitRouter, gplusAPI)
+// }
 func BenchmarkDenco_GPlusAll(b *testing.B) {
 	benchRoutes(b, gplusDenco, gplusAPI)
 }

@@ -356,10 +356,11 @@ func BenchmarkChi_ParseParam(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/1/classes/go", nil)
 	benchRequest(b, parseChi, req)
 }
-func BenchmarkCloudyKitRouter_ParseParam(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/1/classes/go", nil)
-	benchRequest(b, parseCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_ParseParam(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/1/classes/go", nil)
+// 	benchRequest(b, parseCloudyKitRouter, req)
+// }
 func BenchmarkDenco_ParseParam(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/1/classes/go", nil)
 	benchRequest(b, parseDenco, req)
@@ -492,10 +493,11 @@ func BenchmarkChi_Parse2Params(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/1/classes/go/123456789", nil)
 	benchRequest(b, parseChi, req)
 }
-func BenchmarkCloudyKitRouter_Parse2Params(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/1/classes/go/123456789", nil)
-	benchRequest(b, parseCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_Parse2Params(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/1/classes/go/123456789", nil)
+// 	benchRequest(b, parseCloudyKitRouter, req)
+// }
 func BenchmarkDenco_Parse2Params(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/1/classes/go/123456789", nil)
 	benchRequest(b, parseDenco, req)
@@ -622,9 +624,10 @@ func BenchmarkBone_ParseAll(b *testing.B) {
 func BenchmarkChi_ParseAll(b *testing.B) {
 	benchRoutes(b, parseChi, parseAPI)
 }
-func BenchmarkCloudyKitRouter_ParseAll(b *testing.B) {
-	benchRoutes(b, parseCloudyKitRouter, parseAPI)
-}
+
+// func BenchmarkCloudyKitRouter_ParseAll(b *testing.B) {
+// 	benchRoutes(b, parseCloudyKitRouter, parseAPI)
+// }
 func BenchmarkDenco_ParseAll(b *testing.B) {
 	benchRoutes(b, parseDenco, parseAPI)
 }

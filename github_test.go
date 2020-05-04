@@ -436,10 +436,11 @@ func BenchmarkBone_GithubStatic(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/user/repos", nil)
 	benchRequest(b, githubBone, req)
 }
-func BenchmarkCloudyKitRouter_GithubStatic(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/user/repos", nil)
-	benchRequest(b, githubCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_GithubStatic(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/user/repos", nil)
+// 	benchRequest(b, githubCloudyKitRouter, req)
+// }
 func BenchmarkChi_GithubStatic(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/user/repos", nil)
 	benchRequest(b, githubChi, req)
@@ -576,10 +577,11 @@ func BenchmarkChi_GithubParam(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/repos/julienschmidt/httprouter/stargazers", nil)
 	benchRequest(b, githubChi, req)
 }
-func BenchmarkCloudyKitRouter_GithubParam(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/repos/julienschmidt/httprouter/stargazers", nil)
-	benchRequest(b, githubCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_GithubParam(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/repos/julienschmidt/httprouter/stargazers", nil)
+// 	benchRequest(b, githubCloudyKitRouter, req)
+// }
 func BenchmarkDenco_GithubParam(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/repos/julienschmidt/httprouter/stargazers", nil)
 	benchRequest(b, githubDenco, req)
@@ -706,9 +708,10 @@ func BenchmarkBone_GithubAll(b *testing.B) {
 func BenchmarkChi_GithubAll(b *testing.B) {
 	benchRoutes(b, githubChi, githubAPI)
 }
-func BenchmarkCloudyKitRouter_GithubAll(b *testing.B) {
-	benchRoutes(b, githubCloudyKitRouter, githubAPI)
-}
+
+// func BenchmarkCloudyKitRouter_GithubAll(b *testing.B) {
+// 	benchRoutes(b, githubCloudyKitRouter, githubAPI)
+// }
 func BenchmarkDenco_GithubAll(b *testing.B) {
 	benchRoutes(b, githubDenco, githubAPI)
 }

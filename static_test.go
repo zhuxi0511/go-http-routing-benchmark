@@ -344,9 +344,10 @@ func BenchmarkBone_StaticAll(b *testing.B) {
 func BenchmarkChi_StaticAll(b *testing.B) {
 	benchRoutes(b, staticChi, staticRoutes)
 }
-func BenchmarkCloudyKitRouter_StaticAll(b *testing.B) {
-	benchRoutes(b, staticCloudyKitRouter, staticRoutes)
-}
+
+// func BenchmarkCloudyKitRouter_StaticAll(b *testing.B) {
+// 	benchRoutes(b, staticCloudyKitRouter, staticRoutes)
+// }
 func BenchmarkDenco_StaticAll(b *testing.B) {
 	benchRoutes(b, staticDenco, staticRoutes)
 }
