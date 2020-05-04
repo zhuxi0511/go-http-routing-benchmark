@@ -219,10 +219,11 @@ func BenchmarkChi_ParseStatic(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/1/users", nil)
 	benchRequest(b, parseChi, req)
 }
-func BenchmarkCloudyKitRouter_ParseStatic(b *testing.B) {
-	req, _ := http.NewRequest("GET", "/1/users", nil)
-	benchRequest(b, parseCloudyKitRouter, req)
-}
+
+// func BenchmarkCloudyKitRouter_ParseStatic(b *testing.B) {
+// 	req, _ := http.NewRequest("GET", "/1/users", nil)
+// 	benchRequest(b, parseCloudyKitRouter, req)
+// }
 func BenchmarkDenco_ParseStatic(b *testing.B) {
 	req, _ := http.NewRequest("GET", "/1/users", nil)
 	benchRequest(b, parseDenco, req)
