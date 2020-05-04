@@ -236,9 +236,9 @@ func init() {
 	calcMem("Chi", func() {
 		staticChi = loadChi(staticRoutes)
 	})
-	calcMem("CloudyKitRouter", func() {
-		staticCloudyKitRouter = loadCloudyKitRouter(staticRoutes)
-	})
+	// calcMem("CloudyKitRouter", func() {
+	// 	staticCloudyKitRouter = loadCloudyKitRouter(staticRoutes)
+	// })
 	calcMem("Denco", func() {
 		staticDenco = loadDenco(staticRoutes)
 	})

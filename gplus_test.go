@@ -92,9 +92,9 @@ func init() {
 	calcMem("Chi", func() {
 		gplusChi = loadChi(gplusAPI)
 	})
-	calcMem("CloudyKitRouter", func() {
-		gplusCloudyKitRouter = loadCloudyKitRouter(gplusAPI)
-	})
+	// calcMem("CloudyKitRouter", func() {
+	// 	gplusCloudyKitRouter = loadCloudyKitRouter(gplusAPI)
+	// })
 	calcMem("Denco", func() {
 		gplusDenco = loadDenco(gplusAPI)
 	})

@@ -140,12 +140,13 @@ func BenchmarkChi_Param(b *testing.B) {
 	r, _ := http.NewRequest("GET", "/user/gordon", nil)
 	benchRequest(b, router, r)
 }
-func BenchmarkCloudyKitRouter_Param(b *testing.B) {
-	router := loadCloudyKitRouterSingle("GET", "/user/:name", cloudyKitRouterHandler)
 
-	r, _ := http.NewRequest("GET", "/user/gordon", nil)
-	benchRequest(b, router, r)
-}
+// func BenchmarkCloudyKitRouter_Param(b *testing.B) {
+// 	router := loadCloudyKitRouterSingle("GET", "/user/:name", cloudyKitRouterHandler)
+
+// 	r, _ := http.NewRequest("GET", "/user/gordon", nil)
+// 	benchRequest(b, router, r)
+// }
 func BenchmarkDenco_Param(b *testing.B) {
 	router := loadDencoSingle("GET", "/user/:name", dencoHandler)
 
@@ -350,12 +351,13 @@ func BenchmarkChi_Param5(b *testing.B) {
 	r, _ := http.NewRequest("GET", fiveRoute, nil)
 	benchRequest(b, router, r)
 }
-func BenchmarkCloudyKitRouter_Param5(b *testing.B) {
-	router := loadCloudyKitRouterSingle("GET", fiveColon, cloudyKitRouterHandler)
 
-	r, _ := http.NewRequest("GET", fiveRoute, nil)
-	benchRequest(b, router, r)
-}
+// func BenchmarkCloudyKitRouter_Param5(b *testing.B) {
+// 	router := loadCloudyKitRouterSingle("GET", fiveColon, cloudyKitRouterHandler)
+
+// 	r, _ := http.NewRequest("GET", fiveRoute, nil)
+// 	benchRequest(b, router, r)
+// }
 func BenchmarkDenco_Param5(b *testing.B) {
 	router := loadDencoSingle("GET", fiveColon, dencoHandler)
 
@@ -560,12 +562,13 @@ func BenchmarkChi_Param20(b *testing.B) {
 	r, _ := http.NewRequest("GET", twentyRoute, nil)
 	benchRequest(b, router, r)
 }
-func BenchmarkCloudyKitRouter_Param20(b *testing.B) {
-	router := loadCloudyKitRouterSingle("GET", twentyColon, cloudyKitRouterHandler)
 
-	r, _ := http.NewRequest("GET", twentyRoute, nil)
-	benchRequest(b, router, r)
-}
+// func BenchmarkCloudyKitRouter_Param20(b *testing.B) {
+// 	router := loadCloudyKitRouterSingle("GET", twentyColon, cloudyKitRouterHandler)
+
+// 	r, _ := http.NewRequest("GET", twentyRoute, nil)
+// 	benchRequest(b, router, r)
+// }
 func BenchmarkDenco_Param20(b *testing.B) {
 	router := loadDencoSingle("GET", twentyColon, dencoHandler)
 
@@ -766,12 +769,13 @@ func BenchmarkChi_ParamWrite(b *testing.B) {
 	r, _ := http.NewRequest("GET", "/user/gordon", nil)
 	benchRequest(b, router, r)
 }
-func BenchmarkCloudyKitRouter_ParamWrite(b *testing.B) {
-	router := loadCloudyKitRouterSingle("GET", "/user/:name", cloudyKitRouterHandler)
 
-	r, _ := http.NewRequest("GET", "/user/gordon", nil)
-	benchRequest(b, router, r)
-}
+// func BenchmarkCloudyKitRouter_ParamWrite(b *testing.B) {
+// 	router := loadCloudyKitRouterSingle("GET", "/user/:name", cloudyKitRouterHandler)
+
+// 	r, _ := http.NewRequest("GET", "/user/gordon", nil)
+// 	benchRequest(b, router, r)
+// }
 func BenchmarkDenco_ParamWrite(b *testing.B) {
 	router := loadDencoSingle("GET", "/user/:name", dencoHandlerWrite)
 

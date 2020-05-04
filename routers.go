@@ -24,7 +24,7 @@ import (
 	"github.com/go-playground/lars"
 
 	// "github.com/daryl/zeus"
-	cloudykitrouter "github.com/cloudykit/router"
+	// cloudykitrouter "github.com/cloudykit/router"
 	"github.com/dimfeld/httptreemux"
 	"github.com/emicklei/go-restful/v3"
 	"github.com/gin-gonic/gin"
@@ -407,35 +407,35 @@ func loadChiSingle(method, path string, handler http.HandlerFunc) http.Handler {
 	return mux
 }
 
-// CloudyKit Router
-func cloudyKitRouterHandler(_ http.ResponseWriter, _ *http.Request, _ cloudykitrouter.Parameter) {}
+// // CloudyKit Router
+// func cloudyKitRouterHandler(_ http.ResponseWriter, _ *http.Request, _ cloudykitrouter.Parameter) {}
 
-func cloudyKitRouterHandlerWrite(w http.ResponseWriter, _ *http.Request, ps cloudykitrouter.Parameter) {
-	io.WriteString(w, ps.ByName("name"))
-}
+// func cloudyKitRouterHandlerWrite(w http.ResponseWriter, _ *http.Request, ps cloudykitrouter.Parameter) {
+// 	io.WriteString(w, ps.ByName("name"))
+// }
 
-func cloudyKitRouterHandlerTest(w http.ResponseWriter, r *http.Request, _ cloudykitrouter.Parameter) {
-	io.WriteString(w, r.RequestURI)
-}
+// func cloudyKitRouterHandlerTest(w http.ResponseWriter, r *http.Request, _ cloudykitrouter.Parameter) {
+// 	io.WriteString(w, r.RequestURI)
+// }
 
-func loadCloudyKitRouter(routes []route) http.Handler {
-	h := cloudyKitRouterHandler
-	if loadTestHandler {
-		h = cloudyKitRouterHandlerTest
-	}
+// func loadCloudyKitRouter(routes []route) http.Handler {
+// 	h := cloudyKitRouterHandler
+// 	if loadTestHandler {
+// 		h = cloudyKitRouterHandlerTest
+// 	}
 
-	router := cloudykitrouter.New()
-	for _, route := range routes {
-		router.AddRoute(route.method, route.path, h)
-	}
-	return router
-}
+// 	router := cloudykitrouter.New()
+// 	for _, route := range routes {
+// 		router.AddRoute(route.method, route.path, h)
+// 	}
+// 	return router
+// }
 
-func loadCloudyKitRouterSingle(method, path string, handler cloudykitrouter.Handler) http.Handler {
-	router := cloudykitrouter.New()
-	router.AddRoute(method, path, handler)
-	return router
-}
+// func loadCloudyKitRouterSingle(method, path string, handler cloudykitrouter.Handler) http.Handler {
+// 	router := cloudykitrouter.New()
+// 	router.AddRoute(method, path, handler)
+// 	return router
+// }
 
 // Denco
 func dencoHandler(w http.ResponseWriter, r *http.Request, params denco.Params) {}

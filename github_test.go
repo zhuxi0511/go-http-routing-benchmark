@@ -330,9 +330,9 @@ func init() {
 	calcMem("Chi", func() {
 		githubChi = loadChi(githubAPI)
 	})
-	calcMem("CloudyKitRouter", func() {
-		githubCloudyKitRouter = loadCloudyKitRouter(githubAPI)
-	})
+	// calcMem("CloudyKitRouter", func() {
+	// 	githubCloudyKitRouter = loadCloudyKitRouter(githubAPI)
+	// })
 	calcMem("Denco", func() {
 		githubDenco = loadDenco(githubAPI)
 	})
