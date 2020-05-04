@@ -20,4 +20,4 @@ install:
   - if [[ "${GO111MODULE}" = "on" ]]; then export PATH="${GOPATH}/bin:${GOROOT}/bin:${PATH}"; fi
 
 script:
-  - go test -bench="Aero|Beego|Chi|Gin|Echo|HttpRouter"
+  - go test -timeout=2h -bench=.
