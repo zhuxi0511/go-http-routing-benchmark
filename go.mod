@@ -7,12 +7,11 @@ require (
 	github.com/ant0ine/go-json-rest v3.3.2+incompatible
 	github.com/astaxie/beego v1.12.1
 	github.com/bmizerany/pat v0.0.0-20170815010413-6226ea591a40
-	github.com/cloudykit/router v0.0.0-20170501012743-15c4ed71df81
 	github.com/codegangsta/inject v0.0.0-20150114235600-33e0aa1cb7c0 // indirect
 	github.com/dimfeld/httptreemux v5.0.1+incompatible
 	github.com/emicklei/go-restful/v3 v3.1.0
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
-	github.com/gin-gonic/gin v1.6.3
+	github.com/gin-gonic/gin v1.6.3-0.20200508130405-dfc67c00ee6f
 	github.com/go-chi/chi v4.1.1+incompatible
 	github.com/go-martini/martini v0.0.0-20170121215854-22fa46961aab
 	github.com/go-playground/form v3.1.4+incompatible // indirect
