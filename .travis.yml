@@ -20,4 +20,4 @@ install:
   - if [[ "${GO111MODULE}" = "on" ]]; then export PATH="${GOPATH}/bin:${GOROOT}/bin:${PATH}"; fi
 
 script:
-  - go test -timeout=2h -bench=.
+  - go test -timeout=4h -bench=. -benchtime=7s
