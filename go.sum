@@ -66,6 +66,8 @@ github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.6.3-0.20200510025630-450ff5e15316 h1:1HpOW/1XHf9vYc0cDq51ZrVGtgcyon5trcjtoiAaMOY=
 github.com/gin-gonic/gin v1.6.3-0.20200510025630-450ff5e15316/go.mod h1:75u5sXoLsGZoRN5Sgbi1eraJ4GU3++wFwWzhwvtwp4M=
+github.com/gin-gonic/gin v1.6.3-0.20200510040235-9b0fe9690a10 h1:fLqex7ThtRYLSXRwjAerFt0K1A8rN6SQA9IwgItbvx8=
+github.com/gin-gonic/gin v1.6.3-0.20200510040235-9b0fe9690a10/go.mod h1:75u5sXoLsGZoRN5Sgbi1eraJ4GU3++wFwWzhwvtwp4M=
 github.com/go-chi/chi v4.1.1+incompatible h1:MmTgB0R8Bt/jccxp+t6S/1VGIKdJw5J74CK/c9tTfA4=
 github.com/go-chi/chi v4.1.1+incompatible/go.mod h1:eB3wogJHnLi3x/kFX2A+IbTBlXxmMeXJVKy9tTv1XzQ=
 github.com/go-macaron/inject v0.0.0-20160627170012-d8a0b8677191 h1:NjHlg70DuOkcAMqgt0+XA+NHwtu66MkTVVgR4fFWbcI=
