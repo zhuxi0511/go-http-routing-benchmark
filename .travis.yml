@@ -1,11 +1,11 @@
 sudo: false
 language: go
 go:
-  - 1.14.x
+  - 1.16.x
 
 git:
   depth: 1
 
 script:
   - env GO111MODULE=on go build -v .
-  - env GO111MODULE=on go test -timeout=4h -bench=. -benchtime=3s
+  - env GO111MODULE=on go test -timeout=4h -bench="Gin" -benchtime=3s -count=10
