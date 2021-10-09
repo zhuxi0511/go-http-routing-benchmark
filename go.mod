@@ -70,4 +70,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/gin-gonic/gin v1.7.4 => github.com/zhuxi0511/gin v1.7.2-0.20211009154959-34b07b4bec59
+replace github.com/gin-gonic/gin v1.7.4 => github.com/zhuxi0511/gin v1.7.2-0.20210930020428-1a2bc0e7cb1a

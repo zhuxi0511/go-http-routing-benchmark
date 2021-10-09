@@ -274,6 +274,7 @@ github.com/zeebo/xxh3 v0.0.0-20191227220208-65f423c10688 h1:C5YYdD+oJh6KoLMePMeA
 github.com/zeebo/xxh3 v0.0.0-20191227220208-65f423c10688/go.mod h1:e/zZObEJWtkq6f+bAzme0xQJSGI75oxoeqS+f2I7YVI=
 github.com/zenazn/goji v0.9.0 h1:RSQQAbXGArQ0dIDEq+PI6WqN6if+5KHu6x2Cx/GXLTQ=
 github.com/zenazn/goji v0.9.0/go.mod h1:7S9M489iMyHBNxwZnk9/EHS098H4/F6TATF2mIxtB1Q=
+github.com/zhuxi0511/gin v1.7.2-0.20210930020428-1a2bc0e7cb1a/go.mod h1:+hfpYLyM/+kif4nie6oSwdaCN6Vx1HAL/y+JV57SAwg=
 github.com/zhuxi0511/gin v1.7.2-0.20211008090016-2eb3ba8b525a/go.mod h1:+hfpYLyM/+kif4nie6oSwdaCN6Vx1HAL/y+JV57SAwg=
 github.com/zhuxi0511/gin v1.7.2-0.20211009144134-54f3b457c74e/go.mod h1:+hfpYLyM/+kif4nie6oSwdaCN6Vx1HAL/y+JV57SAwg=
 github.com/zhuxi0511/gin v1.7.2-0.20211009154959-34b07b4bec59/go.mod h1:+hfpYLyM/+kif4nie6oSwdaCN6Vx1HAL/y+JV57SAwg=
