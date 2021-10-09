@@ -8,4 +8,4 @@ git:
 
 script:
   - env GO111MODULE=on go build -v .
-  - env GO111MODULE=on go test -timeout=4h -bench="Gin" -benchtime=3s -count=1
+  - env GO111MODULE=on go test -timeout=4h -bench="Gin" -benchtime=3s -count=10
